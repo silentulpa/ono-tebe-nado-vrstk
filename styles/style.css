@@ -21,7 +21,7 @@
   list-style: none;
 }
 
-.address {
+.address__link {
   max-width: 290px;
   height: 98px;
   justify-self: end;
@@ -109,6 +109,7 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
+  text-transform: uppercase;
 
 }
 
@@ -125,6 +126,7 @@
   line-height: auto;
   font-size: 22px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .button-p {
@@ -303,7 +305,7 @@
   position: absolute;
 }
 
-.h3-auction {
+.h2-auction {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
@@ -342,20 +344,11 @@
 }
 
 .footer {
-  padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 82px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 180px;
-}
-
-.address-footer {
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24.3px;
 }
 
 .menu-footer {
@@ -367,4 +360,8 @@
 
 .text-menu-footer {
   text-decoration: underline;
+}
+
+.menu-footer-main {
+  text-decoration: none;
 }

@@ -12,14 +12,14 @@
   <body>
     <header class="header">
       <ul class="menu-header">
-        <li class="main-in-menu"><a href="#">главная</a></li>
+        <li class="main-in-menu"><a class="main-in-menu" href="#">главная</a></li>
         <li><a href="#">посмотреть лоты</a></li>
         <li><a href="#">об аукционе</a></li>
       </ul>
       <a class="logo">
         <img src="images/logo-black.svg" alt="Логотип Оно тебе надо">
       </a>
-      <address class="address"> 
+      <address class="address__link"> 
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <span>наб. Принсенграхт 263-</span>
@@ -30,19 +30,19 @@
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="title">
-          <span class="ono">ОНО</span>
-          <span class="tebe">ТЕБЕ</span>
-          <span class="nado">НАДО</span>
+          <span class="ono">оно</span>
+          <span class="tebe">тебе</span>
+          <span class="nado">надо</span>
         </h1>
         <div class="description">
-          <p class="descr-p">АУКЦИОН  ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</p>
+          <p class="descr-p">Аукцион вещей, в которые никто не верил</p>
           <button class="button">
-            <span class="button-p">СДЕЛАТЬ СТАВКУ</span>
+            <span class="button-p">Сделать ставку</span>
           </button>
         </div>
       </section>
       <section class="lots">
-        <h2 class="h2-lots">ЛОТЫ</h2>
+        <h2 class="h2-lots">Лоты</h2>
         <ul class="cards-list"> 
           <li class="cinema-li">
             <a href="#" class="card-link">
@@ -72,7 +72,9 @@
             </a>
           </li>
         </ul>
-        <span class="more">посмотреть больше</span>
+        <a href="#" class="more">
+          <span>посмотреть больше</span>
+        </a>
       </section>
       <section class="about-auction">
         <a class="logo-column">
@@ -81,7 +83,7 @@
           </div>
         </a>
         <div class="column">
-          <h3 class="h3-auction">ОБ АУКЦИОНЕ</h3>
+          <h2 class="h2-auction">ОБ АУКЦИОНЕ</h2>
           <div class="paragraphs-group">
             <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
             <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -91,14 +93,14 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="address-footer">
-        <span class="text-menu-footer">+9 999 555 5555</span>
-        <span class="text-menu-footer">info@sobaka.ge</span>
+      <address class="address__link">
+        <a href="tel:+99995555555" class="text-menu-footer">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge" class="text-menu-footer">info@sobaka.ge</a>
         <span>наб. Принсенграхт 263-265,</span>
         <span>Амстердам</span>
       </address>
       <nav class="menu-footer">
-        <a href="#">главная</a>
+        <a href="#" class="menu-footer-main">главная</a>
         <a href="#">посмотреть лоты</a>
         <a href="#">об аукционе</a>
       </nav>

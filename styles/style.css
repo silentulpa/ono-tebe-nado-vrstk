@@ -1,367 +1,339 @@
-.logo {
-  display: block;
-  width: 148px;
-  padding-top: 92px;
-  padding-bottom: 96px;
-}
-
-
-.menu-header {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  align-items: center;
-  list-style: circle;
-  padding-top: 95px;
-  padding-bottom: 100px;
-}
-
-.main-in-menu {
-  text-decoration: none;
-  list-style: none;
-}
-
-.address__link {
-  max-width: 290px;
-  height: 98px;
-  justify-self: end;
-  display: flex;
-  flex-direction: column;
-  line-height: 24.3px;
-  font-size: 18px;
-  font-weight: 400;
-  padding-right: 50px;
-  flex-wrap: nowrap;
-}
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding-left: 50px;
-  background-color: #ffffff;
+  padding-top: 92px;
+  padding-left: 23px;
+  padding-bottom: 92px;
+  padding-right: 24px;
+}
+
+.header-menu {
+  display: flex;
+  justify-self: center;
+
+}
+
+.menu-links {
+  display: flex;
+  gap: 33px;
+  list-style-type: circle;
+  padding-right: 10px;
+  padding-bottom: 4px;
+}
+
+
+.link-list {
+  font-size: 18px;
+  font-weight: 400;
+  text-underline-offset: 4px; 
+  text-decoration: underline;
+}
+
+.main-link-marker {
+  list-style-type: none; 
+  text-decoration: none;
+}
+
+.link-main {
+  text-decoration: none;
+}
+
+.header-logo {
+  padding-left: 3px;
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  padding-left: 187px;
+  padding-bottom: 4px;
+  font-size: 18px;
+  line-height: 24.3px;
+  letter-spacing: 0%;
+  font-family: "Raleway", sans-serif;
+  list-style-type: none;
+  font-style: normal;
+  text-underline-offset: 4px; 
 }
 
 .cover {
-  background-image: url("../images/cover.jpg");
-  min-height: 757px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 180px;
-  padding-top: 165px;
-  padding-left: 50px;
-  padding-right: 50px;
   position: relative;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  color: white;
+  text-transform: uppercase;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 
 .overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   position: absolute;
-  margin-bottom: 165px;
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: 100%; 
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
+  height: 100%;
+  z-index: -1;
 }
 
-.title {
-  text-transform: uppercase;
-  z-index: 2;
-  font-size: 100px;
+.title { 
+  display: flex;
+  flex-direction: column;
+  padding: 167px 50px 106px 50px;
+  gap: 20px;
+} 
+ 
+.title span {
+  font-size: 100px; 
+  font-weight: 700;  
+  line-height: 100%;
+  line-height: 114.99999999999999%;
   letter-spacing: 30%;
-  font-weight: 700;
-  color: #ffffff;
 }
 
 .ono {
-  position: absolute;
-  width: 286px;
-  height: 115px;
-  top: 165px; 
-  left: 50px;
+  text-align: left;
 }
 
 .tebe {
-  position: absolute;
-  width: 339px;
-  height: 115px;
-  top: 300px; 
-  left: 380.5px;
+  text-align: center;
+  padding-left: 30px;
 }
 
 .nado {
-  position: absolute;
-  width: 387px;
-  height: 115px;
-  top: 435px; 
-  left: 663px;
+  text-align: right;
+  padding-left: 614px;
+  padding-top: 2px;
 }
 
-.descr-p {
-  word-spacing: 18px;
-  position: absolute;
-  width: 637px;
-  height: 28px;
-  top: 668px; 
-  left: 50px;
+.cover-description {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding: 0px 50px 50px 50px;
+}
+
+.cover-text {
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
-  text-transform: uppercase;
-
+  word-spacing: 18.8px;
+  white-space: nowrap;
+  padding-right: 106px;
 }
+
 
 .button {
-  position: absolute;
-  border: 1px solid white;
   width: 256px;
   height: 51px;
-  top: 656px;
-  left: 794px;
-  background: transparent;
-  color: white;
-  text-align: center;
-  line-height: auto;
+  border: 1px solid white;
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
   font-size: 22px;
+  line-height: 100%;
   font-weight: 500;
-  text-transform: uppercase;
-}
-
-.button-p {
-  z-index: 2;
-  color: white;
-}
-
-.description {
   text-align: center;
-  z-index: 2;
   text-transform: uppercase;
-  color: white;
+  padding: 12px 32px 11px 31px;
+  white-space: nowrap;
 }
 
 .lots {
-  position: relative;
-  margin-bottom: 180px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-left: 5px;
 }
 
-.h2-lots {
-  padding-left: 40px;
-  width: 121px;
-  height: 47px;
-  left: 40px;
+.title-lots {
+  padding-top: 179px;
+  padding-bottom: 26px;
+  padding-left: 60px;
+  color: #000;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.cards-list {
-  list-style: none;
-  padding-top: 27px;
-  margin: 0;
+.container-lots {
   display: flex;
-  gap: 25px;
-  flex-direction: row;
   flex-wrap: wrap;
-  color: white;
-  justify-content: center;
+  list-style-type: none;
+  gap: 25px;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0 auto;
+  margin-left: 20px;
 }
 
-.card-link {
-  height: 100%;
+.card-lots a { 
   text-decoration: none;
-  color: inherit;
 }
 
-.h3 {
-  text-transform: uppercase;
-  z-index: 2;
+.card-lots {
+  max-width: 334px;
+  min-height: 596px;
+  flex-grow: 1;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  padding: 48px 40px 48px 40px;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-about-cinema {
+  background-image: url(./../images/card-lot-01.jpg);
+}
+
+.card-about-book {
+  background-image: url(./../images/card-lot-02.jpg);
+}
+
+.card-about-picture {
+  background-image: url(./../images/card-lot-03.jpg);
+}
+
+.card-title {
+  color: white;
   font-size: 22px;
   font-weight: 700;
-  color: #ffffff;
-  text-align: start;
-  text-decoration: underline;
-  padding-top: 48px;
-  padding-left: 40px;
-  padding-right: 40px;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  padding-bottom: 35px;
+  text-underline-offset: 3px;
 }
 
-.lot-p {
-  text-align: start;
-  padding-bottom: 48px;
-  padding-left: 40px;
-  padding-right: 40px;
-  z-index: 2;
+.link-lots { 
+  text-decoration: none;
+}
+
+.text-on-card {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.view-more {
+  display: block;
+  text-underline-offset: 5px;
+  padding-top: 32px;
+  color: black;
   font-size: 20px;
   font-weight: 400;
-  color: #ffffff;
+  line-height: 100%;
+  margin-left: 60px;
+  letter-spacing: 0%;
 }
 
-.cinema-li {
-  width: 334px;
-  min-height: 596px;
-  top: 74px;
+.about {
+  margin-top: 122px;
 }
 
-.book-li {
-  width: 334px;
-  height: 596px;
-  top: 74px;
-  left: 359px;
-}
-
-.picture-li {
-  width: 334px;
-  height: 596px;
-  top: 74px;
-  left: 718px;
-}
-
-.lot-cinema-art {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: url("../images/card-lot-01.jpg");
-  background-size: cover;
-  height: 100%;
-  background-position: center;
-  position: relative; 
-}
-
-.lot-book-art {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: url("../images/card-lot-02.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  position: relative;
-}
-
-.lot-picture-art {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: url("../images/card-lot-03.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  position: relative;
-} 
-
-.more {
-  position: absolute;
-  width: 192px;
-  height: 25px;
-  top: 700px;
-  left: 40px;
-  text-decoration: underline;
-  font-weight: 400;
-  font-size: 20px;
-}
-
-.about-auction {
+.about-container {
   display: grid;
-  grid-template-columns: 334px 1fr;
-  width: 1052px;
-  height: 595px;
-  padding-top: 35px;
-  padding-left: 47px;
-  margin-left: 24px;
-  margin-right: 24px;
-  padding-right: 5px;
-  position: relative;
+  grid-template-columns: 334px repeat(1, 1fr);
+  gap: 25px;
+  padding: 34px 24px 0px;
 }
 
-.style-logo {
+.about-logo {
+  justify-self: center;
+  background-color: #000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-logo-image {
   width: 148px;
   height: 114px;
 }
 
-.logo-column {
+.about-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000000;
-  border-radius: 50%;
-  height: 240px;
-  width: 240px;
-}
-
-.column {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  flex-direction: column;
-  text-align: start;
-  width: 693px;
-  height: 449px;
-  top: 133px;
-  left: 359px;
-  position: absolute;
-}
-
-.h2-auction {
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 700;
-  color: #000000;
-  padding-bottom: 100px;
-}
-
-.paragraphs-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 24px;
+  padding-top: 102px;
+}
+
+.title-about {
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+}
+
+.about-text {
+  align-self: flex-start;
+  font-family: "Raleway", sans-serif;
+  color: black;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.social-links {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 48px;
-  justify-content: end;
-  width: 100%;
-  font-size: 18px;
-  font-weight: 400;
+.text-up {
+  padding-top: 76px;
 }
 
-.social-icon {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.text-down {
+  padding-top: 24.5px;
 }
 
 .footer {
-  padding-right: 50px;
-  padding-bottom: 82px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 180px;
+  grid-template-columns: auto 1fr auto;
+  padding: 180px 50px 88px 51px;
+  gap: 140px;
+  align-items: flex-start;
 }
 
-.menu-footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: start;
+.footer-address {
+  font-style: normal;
+  padding-left: 0px; 
 }
 
-.text-menu-footer {
-  text-decoration: underline;
+
+.footer-menu-links {
+  list-style-type: none;
+  text-underline-offset: 4px;
+  padding-left: 4px;
 }
 
-.menu-footer-main {
+.footer-links {
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-main {
   text-decoration: none;
+}
+
+.images-footer {
+  width: 48px;
+  height: 48px;
+}
+
+.footer-images {
+  display: flex;
+  gap: 48px;
 }

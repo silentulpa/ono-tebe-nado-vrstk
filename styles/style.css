@@ -11,7 +11,6 @@
 .header-menu {
   display: flex;
   justify-self: center;
-
 }
 
 .menu-links {
@@ -54,7 +53,8 @@
   font-family: "Raleway", sans-serif;
   list-style-type: none;
   font-style: normal;
-  text-underline-offset: 4px; 
+  text-underline-offset: 4px;
+  width: 390px;
 }
 
 .cover {
@@ -214,9 +214,6 @@
   text-underline-offset: 3px;
 }
 
-.link-lots { 
-  text-decoration: none;
-}
 
 .text-on-card {
   color: white;
@@ -224,6 +221,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+  text-decoration: none;
 }
 
 .view-more {
@@ -277,6 +275,8 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 46.96px;
+  text-transform: uppercase;
+  padding-bottom: 52px;
 }
 
 .about-text {
@@ -288,32 +288,32 @@
   line-height: 24px;
 }
 
-.text-up {
-  padding-top: 76px;
-}
-
-.text-down {
-  padding-top: 24.5px;
+.text-about-p {
+  width: 693px;
+  padding-right: 3px;
+  white-space: pre-line;
 }
 
 .footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  padding: 180px 50px 88px 51px;
+  padding: 181px 50px 88px 51px;
   gap: 140px;
   align-items: flex-start;
 }
 
 .footer-address {
   font-style: normal;
-  padding-left: 0px; 
+  padding-left: 0px;
+  width: 264.573486328125px;
+  line-height: 24.5px;
 }
 
 
 .footer-menu-links {
   list-style-type: none;
   text-underline-offset: 4px;
-  padding-left: 4px;
+  padding-right: 23px;
 }
 
 .footer-links {
